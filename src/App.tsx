@@ -12,6 +12,7 @@ import Feed from "./components/Feed";
 import { PostsPage, PostDetail } from "./pages/Posts";
 import LoginModal from "./components/LoginModal";
 import { ToastHost } from "./components/ui";
+import LineAlert from "./components/LineAlert";
 import { DesktopRail, DesktopTitleBar } from "./components/DesktopChrome";
 import ResizeHandles from "./components/ResizeHandles";
 import { IGrid, IGridF, IHome, IHomeF, ISearch, IUser, IUserF, Logo } from "./icons";
@@ -274,6 +275,7 @@ export default function App() {
       {platform === "android" ? <MobileShell /> : <DesktopShell />}
       <LoginModal />
       <ToastHost />
+      <LineAlert />
       {/* 登录遮罩键盘处理占位 */}
       {loginOpen && <div className="hidden" onClick={() => setLoginOpen(false)} />}
     </>

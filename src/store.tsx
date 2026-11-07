@@ -54,7 +54,7 @@ type Persist = {
 const LS = "hghub_app_v1";
 const DEFAULTS: Persist = {
   likes: [], favs: [], history: [], follows: [],
-  muted: true, volume: 0.7, searchHist: [],
+  muted: false, volume: 0.7, searchHist: [],
 };
 
 /** 旧版本 history 是 number[]，读出来时升级成带进度的结构 */
